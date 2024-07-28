@@ -139,8 +139,31 @@ main > section{
 }
 
 /* Responsiveness design */
+
+/* Small devices */
 @media screen and (max-width : 576px) {
-    .navbar, .nav-links{
+    .navbar, 
+    .nav-links,
+    .teams{
         flex-direction: column;
+    }
+    .image-container{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin: 30px auto;
+        text-align: center;
+    }
+}
+
+/* Medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 0 auto;
+        text-align: center;
     }
 }
