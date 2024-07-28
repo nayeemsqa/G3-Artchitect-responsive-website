@@ -175,15 +175,6 @@ main > section{
     font-weight: 600;
 }
 
-
-
-
-
-
-
-
-
-
 /* Responsiveness design */
 
 /* Small devices */
@@ -193,8 +184,7 @@ main > section{
     .teams{
         flex-direction: column;
     }
-    .image-container{
-        flex-direction: column;
+    .image-container, .facts-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features{
@@ -202,8 +192,8 @@ main > section{
         text-align: center;
     }
     .facts-container{
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 24px;
     }
 }
 
