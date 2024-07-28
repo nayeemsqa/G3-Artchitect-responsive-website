@@ -147,7 +147,6 @@ main > section{
     max-width: 542px;
     margin: 24px 0px 80px;
 }
-
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -175,6 +174,23 @@ main > section{
     font-weight: 600;
 }
 
+
+/* Our sponsers section styles */
+
+.sponsers-content{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsors-items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsors-items img{
+    filter: grayscale(100%);
+}
 /* Responsiveness design */
 
 /* Small devices */
@@ -184,7 +200,9 @@ main > section{
     .teams{
         flex-direction: column;
     }
-    .image-container, .facts-container{
+    .image-container, 
+    .facts-container, 
+    .sponsors-items{
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features{
@@ -193,7 +211,11 @@ main > section{
     }
     .facts-container{
         justify-items: center;
-        gap: 24px;
+        gap: 30px;
+    }
+    .sponsors-items{
+        justify-items: center;
+        gap: 30px;
     }
 }
 
@@ -206,8 +228,10 @@ main > section{
         margin: 0 auto;
         text-align: center;
     }
-    .facts-container{
-        flex-direction: column;
+    .facts-container, 
+    .sponsors-items{
         grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
