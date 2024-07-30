@@ -155,6 +155,7 @@ main > section{
 #feature-section-title{
     border-left: 5px solid #FF900E;
     padding-left: 20px;
+    margin: 0;
 }
 
 .feature-card .feature-title{
@@ -163,9 +164,28 @@ main > section{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.featured-architect img{
+    width: 100%;
+}
 /* .features-image{
     width: 100%;
 } */
+
+/* Experience badge styles */
+
+#experience-badge{
+    padding: 45px 45px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -82px;
+    margin-top: -82px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
 /* Some facts styling */
 .facts-title{
     margin-bottom: 0px;
@@ -259,8 +279,13 @@ footer{
         justify-items: center;
         gap: 30px;
     }
-    .features-image{
+    /* .features-image{
         width: 100%;
+    } */
+    #experience-badge{
+        margin-left: 5px;
+        margin-top: 20px;
+        /* margin-bottom: 20px; */
     }
 }
 
